@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.buttontest">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="kr.hs.emirim.snackgo.gosnack.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="kr.hs.emirim.snackgo.gosnack.RankingActivity" android:label="랭킹"></activity>
+        <activity android:name="kr.hs.emirim.snackgo.gosnack.LabActivity" android:label="실험실"></activity>
+        <activity android:name="kr.hs.emirim.snackgo.gosnack.LottoActivity" android:label="랜덤"></activity>
+        <activity android:name="kr.hs.emirim.snackgo.gosnack.PriceRank1ListActivity" android:label="가성비별 랭킹"></activity>
+        <activity android:name="kr.hs.emirim.snackgo.gosnack.PriceRank2ListActivity" android:label="가격낮은별 랭킹"></activity>
+
+    </application>
+
+</manifest>
