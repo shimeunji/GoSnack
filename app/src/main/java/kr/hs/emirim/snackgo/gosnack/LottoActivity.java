@@ -11,6 +11,6 @@ import com.example.buttontest.R;
 public class LottoActivity extends ActionBarActivity {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Lotto);
+        setContentView(R.layout.activity_lotto);
     }
 }
