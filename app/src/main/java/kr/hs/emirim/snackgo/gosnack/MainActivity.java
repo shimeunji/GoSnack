@@ -2,6 +2,9 @@ package kr.hs.emirim.snackgo.gosnack;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,17 +17,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button home_but=(Button)findViewById(R.id.but_home);
-        Button rank_but=(Button)findViewById(R.id.but_rank);
-        Button lab_but=(Button)findViewById(R.id.but_lab);
-        Button random_but=(Button)findViewById(R.id.but_random);
+        Button home_but = (Button) findViewById(R.id.but_home);
+        Button rank_but = (Button) findViewById(R.id.but_rank);
+        Button lab_but = (Button) findViewById(R.id.but_lab);
+        Button random_but = (Button) findViewById(R.id.but_random);
 
 
         rank_but.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RankingActivity.class);
                 startActivity(intent);
-           }
+            }
         });
         lab_but.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -39,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        super.onCreateOptionsMenu(menu);
 
+        MenuItem item1=menu.add(0,1,0,"설정");
+        return true;
     }
 }
+
