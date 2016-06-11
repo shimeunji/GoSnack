@@ -57,8 +57,9 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreateOptionsMenu(menu);
 
-        MenuItem item1=menu.add(0,1,0,"설정");
-        MenuItem item2=menu.add(0,2,0,"my Page");
+        MenuItem item1=menu.add(0,1,0,"설정").setIntent(new Intent(this,SettingActivity.class));
+        MenuItem item2=menu.add(0,2,0,"my Page").setIntent(new Intent(this,SettingActivity.class));
+
         return true;
     }
 }
