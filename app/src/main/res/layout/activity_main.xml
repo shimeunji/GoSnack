@@ -46,14 +46,15 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
         android:id="@+id/img_link"
-        android:layout_below="@+id/but_rank"
-        android:layout_alignLeft="@+id/but_rank"
-        android:layout_alignStart="@+id/but_rank"
-        android:layout_marginTop="43dp" />
+        android:src="@drawable/home"
+        android:layout_below="@+id/but_home"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 
 
 </RelativeLayout>
