@@ -1,12 +1,17 @@
 package kr.hs.emirim.snackgo.gosnack;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.buttontest.R;
 
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
 /**
@@ -71,20 +76,12 @@ public class PriceRank1ListActivity extends ActionBarActivity {
 
 
 
-            /*listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Intent intent = new Intent(getApplicationContext(), ImageActivity.class); // 다음넘어갈 화면
-                    Bitmap sendBitmap = h_info_list.get(position).image;
-
-                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                    sendBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
-                    byte[] byteArray = stream.toByteArray();
-
-                    intent.putExtra("image",byteArray);
+                    Intent intent = new Intent(getApplicationContext(), SnackinfoActivity.class); // 다음넘어갈 화면
                     startActivity(intent);
                 }
             });
-        }*/
+        }
     }
-}

@@ -21,7 +21,7 @@
         <activity android:name="kr.hs.emirim.snackgo.gosnack.LottoActivity" android:label="랜덤"></activity>
         <activity android:name="kr.hs.emirim.snackgo.gosnack.PriceRank1ListActivity" android:label="가성비별 랭킹"></activity>
         <activity android:name="kr.hs.emirim.snackgo.gosnack.PriceRank2ListActivity" android:label="가격낮은별 랭킹"></activity>
-
+        <activity android:name="kr.hs.emirim.snackgo.gosnack.SnackinfoActivity" android:label="과자 정보"></activity>
     </application>
 
 </manifest>
