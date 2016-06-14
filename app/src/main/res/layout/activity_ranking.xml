@@ -8,20 +8,20 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <Button
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/but_rank_2"
-        android:text="가성비별 랭킹"
-        android:id="@+id/but_rank_1"
-        android:layout_centerHorizontal="true" />
+        android:src="@drawable/pricerank"
+        android:id="@+id/but_rank_1" />
 
-    <Button
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="가격별 랭킹"
+        android:src="@drawable/pricerank2"
         android:id="@+id/but_rank_2"
         android:layout_centerVertical="true"
+
         android:layout_alignLeft="@+id/but_rank_1"
         android:layout_alignStart="@+id/but_rank_1"
         android:layout_alignRight="@+id/but_rank_1"

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.buttontest.R;
 
@@ -16,8 +17,8 @@ public class RankingActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ranking); //랭킹화면을 보이게함
 
-        Button rank1_but=(Button)findViewById(R.id.but_rank_1);
-        Button rank2_but=(Button)findViewById(R.id.but_rank_2);
+        ImageButton rank1_but=(ImageButton) findViewById(R.id.but_rank_1);
+        ImageButton rank2_but=(ImageButton)findViewById(R.id.but_rank_2);
         rank1_but.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent5 = new Intent(RankingActivity.this, PriceRank1ListActivity.class);

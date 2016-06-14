@@ -51,16 +51,7 @@
         android:layout_height="170dp"
         android:id="@+id/img_link"
         android:src="@drawable/home"
-        android:layout_below="@+id/but_home"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/img_snack"
-        android:src="@drawable/home2"
-        android:layout_below="@+id/img_link"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

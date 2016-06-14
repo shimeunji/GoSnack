@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
 import com.example.buttontest.R;
-
 /**
  * Created by 내컴퓨터 on 2016-06-12.
  */

@@ -12,11 +12,11 @@
         <activity android:name="kr.hs.emirim.snackgo.gosnack.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name="kr.hs.emirim.snackgo.gosnack.RankingActivity" android:label="랭킹"></activity>
+        <activity android:name="kr.hs.emirim.snackgo.gosnack.RankingActivity"  android:label="랭킹"></activity>
         <activity android:name="kr.hs.emirim.snackgo.gosnack.LabActivity" android:label="실험실"></activity>
         <activity android:name="kr.hs.emirim.snackgo.gosnack.LottoActivity" android:label="랜덤"></activity>
         <activity android:name="kr.hs.emirim.snackgo.gosnack.PriceRank1ListActivity" android:label="가성비별 랭킹"></activity>

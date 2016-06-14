@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="검색"
+            android:onClick="onBtnAddClick"/>
+        <EditText
+            android:id="@+id/ed_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="과자 검색"
+            android:textColor="#b6b6b6"
+            android:layout_toLeftOf="@id/btn_search" />
+    </RelativeLayout>
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/list"
-        android:layout_gravity="center_horizontal" />
+        android:layout_weight="1.70" />
 </LinearLayout>
